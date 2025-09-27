@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <img src="../Multimedia/Logo.png" width="60"/>   
+    <h1>Registration Form</h1>
+    
+    <form action="Registration.html" method="post">
+        <table>
+            <tr>
+              <td>  <label for="fullname">Full Name:</label></td>
+            <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+               <td> <label for="email">Email ID:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+
+            </tr>
+            <tr>
+                <td><label for="contact">Contact Number:</label></td>
+            <td><input type="tel" id="contact" name="contact" required></td>
+            </tr>
+            <tr>
+                <td>  <label for="Username">Username:</label></td>
+              <td><input type="text" id="Username" name="Username" required></td>
+              </tr>
+
+            <tr>
+                <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>  <label for="Course">Course applying for:</label></td>
+              <td>
+                <select id="Course" name="Course">
+                    <option disabled selected>Select course</option>
+                    <option id="Web development">Web Development</option>
+                    <option id="Data Science">Data Scioence</option>
+                </select>
+              </td>
+              </tr>
+              <tr>
+                <td><label>You are:</label>
+                <label for="EnrolType">
+                <input type="radio" name="EnrolType" value="Teacher">Teacher</label>
+                <label for="EnrolType">
+                    <input type="radio" name="EnrolType" value="Student">Student</label>
+                </label>
+            </td> </tr>
+            <tr>
+                <td><input type="submit" name="Register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
